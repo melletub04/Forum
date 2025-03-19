@@ -1,0 +1,92 @@
+.add-thread-page {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.page-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.page-description {
+    text-align: center;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+/* Form container animation */
+.form-container {
+    animation: slideUp 0.5s ease;
+}
+
+/* Category tags */
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-tag {
+    padding: 5px 15px;
+    background: #f8c8dc;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-tag:hover {
+    background: #ff85b3;
+    color: white;
+}
+
+.category-tag.selected {
+    background: #ff85b3;
+    color: white;
+}
+
+/* Preview section */
+.preview-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preview-title {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .category-tags {
+        justify-content: center;
+    }
+}

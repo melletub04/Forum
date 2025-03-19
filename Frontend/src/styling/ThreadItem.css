@@ -1,0 +1,80 @@
+.thread-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-left: 4px solid #f8c8dc;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  /* Övergång för alla ändringar */
+}
+
+.thread-item:hover {
+  background-color: #28a745;
+  border-left-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thread-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+}
+
+.thread-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.thread-category {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #28a745;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.thread-author,
+.thread-content,
+.thread-date {
+  margin: 5px 0;
+}
+
+.thread-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.thread-actions a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.thread-actions a:hover {
+  background-color: white;
+  border-color: #28a745;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}

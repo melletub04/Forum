@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  /* Gör att padding och border inkluderas i height */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #009402;
+}
+
+.thread-container {
+  width: 700px;
+  padding: 20px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #009402;
+  /* Öka opaciteten */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.header-components {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search {
+  width: 200px;
+  border: 1px solid #f8c8dc;
+}
+
+.search:focus {
+  outline: none;
+  border-color: #f8c8dc;
+  box-shadow: 0 0 8px rgba(255, 133, 179, 0.6);
+}
+
+.search::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+
+.search,
+.date,
+.add-task-btn {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.date {
+  border: 1px solid #f8c8dc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.add-task-btn {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #f8c8dc;
+}
+
+.forum-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.forum-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #00df4e 0%, #009402 100%);
+  border-radius: 1rem;
+}
+
+.forum-controls {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.threads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.create-thread-btn {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-thread-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  background: #f8f9fa;
+  border-radius: 1rem;
+  color: #6c757d;
+}
+
+.card-actions {
+  display: flex;
+  gap: 1rem;
+}

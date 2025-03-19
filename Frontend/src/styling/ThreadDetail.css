@@ -1,0 +1,209 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.thread-detail-container {
+  width: 700px;
+  padding: 20px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #28a745;
+}
+
+.thread-item {
+  padding: 10px;
+  border: 1px solid #28a745;
+  ;
+  border-left: 4px solid #28a745;
+  ;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.thread-item:hover {
+  background-color: #28a745;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thread-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.thread-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.thread-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.thread-author,
+.thread-content,
+.thread-date {
+  margin: 5px 0;
+}
+
+.thread-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Gemensam stil för knappar och länkar */
+.action-btn,
+.cancel-btn,
+.submit-btn,
+.edit-btn,
+.delete-btn,
+.save-btn {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+}
+
+.action-btn:hover,
+.cancel-btn:hover,
+.submit-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover,
+.save-btn:hover {
+  background-color: white;
+  border-color: #28a745;
+  ;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Kommentarformulär */
+.comment-form {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Namninputfält */
+.comment-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-input:focus {
+  border-color: #357abd;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 133, 179, 0.4);
+}
+
+/* Kommentartextarea */
+.comment-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.comment-textarea:focus {
+  border-color: #28a745;
+  ;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Kommentarer */
+.comments-title {
+  font-size: 1.2rem;
+  margin: 20px 0 10px;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.comment-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-left: 4px solid #28a745;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.comment-item:hover {
+  background-color: #fff5f8;
+  border-left-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment-content {
+  margin: 5px 0;
+}
+
+.comment-author {
+  margin: 5px 0;
+  color: #666;
+}
+
+.comment-date {
+  font-size: 0.9rem;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Redigeringsformulär */
+.edit-comment-form {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+}
